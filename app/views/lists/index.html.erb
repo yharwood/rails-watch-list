@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1>Index</h1>
+  <div class = "card">
+  <% @lists.each do |list| %>
+    <p><%= list.name %></p>
+  <% end %>
+  </div>
+<%= link_to "Add New", new_list_path %>
+</div>
