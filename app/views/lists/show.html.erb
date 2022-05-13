@@ -1,5 +1,8 @@
 <div class="container mt-5">
   <h1><%= @list.name %></h1>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+  Cool list
+</div>
   <% @list.bookmarks.each do |bookmark| %>
     <p><%= bookmark.comment %></p>
     <p><%= bookmark.movie.title %></p>
